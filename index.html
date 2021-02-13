@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XtraHands</title>
+    <link rel="shortcut icon" type="image/png" href="arm.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showproblem()" class="animated fadeIn" style="animation-delay:2.2s;">The Problem</a>
+    <a id="work" onclick="showsolution()" class="animated fadeIn" style="animation-delay:2.2s;">My Solution</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">Contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>XtraHands</h1>
+        <h2>Preventing SSIs one Hand at a Time</h2>
+        <div id="menu">
+            <a onclick="showproblem()">The Problem</a>
+            <a onclick="showsolution()">My Solution</a>
+            <a onclick="showcontact()">Contact</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://twitter.com/Krish_Shahh" target="_blank"><i class="fab fa-twitter"></a></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://www.linkedin.com/in/krish-shah-4525a21b6/" target="_blank"><i class="fab fa-linkedin"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.instagram.com/krish.shahh/" target="_blank"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://github.com/krish-shahh" target="_blank"><i class="fab fa-github"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closesolution()"><i class="fas fa-angle-right"></i></div>
+        <section>
+            <h1>The Solution<img src="arm.png" style="float:right" alt="Robot Arm Picture" width="200" height="275"></h1>
+            <p>The XtraHands is a set of arms on a backpack that helps doctors during surgery. This would limit the number of medical professionals in the operating room at a time which the amount of surgery site infections (SSIs). This system is using "mind-control" which is just a headset with Electroencephalography (EEG) headset. XtraHands can be built using an Arduino Uno, 6x 6-12V Mini DC Motor High Torque, 2x Stepper Motors + Drivers, EEG Headset (Mindflex), Jumper Wires.</p>
+        </section>
+        <section>
+            <h1>XtraHand's Inspiration</h1>
+            <p>The XtraHands idea stems from the movie Spider-Man 2 where Dr. Otto Octavious designed a set of highly advanced mechanical arms to assist him with his research into atomic physics. The tentacled arms were resistant to radiation and were capable of great strength and highly precise movement. They were attached to a harness that fits around his body. During an accidental radiation leak that ended in an explosion, the apparatus became fused to Octavius' body causing the robots to take control of his mind. Though this idea resulted in a tragedy, the goals of the arms were meant for good and I feel this can be used in the medical field.</p>
+        </section>
+        <section>
+            <h1>Next Steps</h1>
+            <p>Collect inputs from surgeons and lab experts to gain further insight and understand concerns with regard to the use of XtraHands. Explore the possibilites of making XtraArms to developing countires like India, Brazil, Argentina, etc. Make a design that can add more features with better EEG technology and more arms.</p>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeproblem()"><i class="fas fa-angle-left"></i></div>
+            <h1>The Problem</h1>
+            <section>
+                <dl>
+                    <dt><b>What are surgical site infections?</b></dt>
+                    <dd><p>- Surgical site infections are defined as infections that occur 30 days after surgery with no implant, or within 1 year if an implant is placed and infection appears to be related to surgery. Infections are classified as either incisional or organ/space infections to differentiate those that occur at the incision site from those related to the organ or space manipulated during surgery. Incisional infections are further classified as superficial or deep.</p></dd>
+                    <dt><b>What are the consequences of SSIs?</b></dt>
+                    <dd><p>- Surgical site infections are associated with substantial morbidity and mortality. Patients with SSI are twice as likely to die, 60% more likely to be admitted to the intensive care unit, and more than five times more likely to be readmitted to the hospital after discharge. In 2002, SSIs contributed to 8205 deaths. Occurrence of SSI is estimated to increase hospital stay by 7 to 10 days and add over $3,000 in costs of care. In a comparison study (Kirkland KB, 1999) of surgical patients with vs. without infection, the median direct costs of hospitalization were $7,531 for infected patients and $3,844 for uninfected patients. Patients who were readmitted after discharge incurred higher costs of over $5,000.</p></dd>
+                    <dd><p>- Higher costs of care were reported in a 2009 study by a CDC economist (Scott RD), who estimated the cost of treating SSI at $10,443 to $25,546. At a rate of 5 SSIs per 100 surgical procedures, the total annual cost of treating SSIs was projected at $3.2 to $10 billion. These wide variations in cost of care reflect the complex nature of SSIs, which may substantially differ in severity depending on the causative pathogen, type of surgical procedure performed, patient’s underlying health condition, and other factors.</p></dd>
+                    <dt><b>Statistics about SSIs:</b></dt>
+                    <dd><p>- Approximately 27 million surgical procedures are performed in the United States each year. Up to 5% resulting in surgical site infections (SSI).</p></dd>
+                    <dd><p>- According to NNIS data, SSIs are the third most frequently reported nosocomial infection and are associated with substantial morbidity that can endanger a patient’s life, increase the number of days in the hospital, and increase healthcare costs.</p></dd>
+                </dl>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>Contact Me</h1>
+                    <form id="fs-frm" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/moqpzvrg" method="post">
+                    <fieldset>
+                        <input type="text" name="name" id="full-name" placeholder="First and Last Name" required>
+                        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required><br>
+                        <textarea rows="5" name="message" id="message" placeholder="Please Type your Message Here" required></textarea><br>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">   
+                    </fieldset>
+                    <input type="submit" class="btn_one">
+                    </form>
+        </div>
+        <div id="footer">
+            <br> Created by <a href="https://krishportfolio.github.io/Krish/" target="_blank">Krish Shah</a></br>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
