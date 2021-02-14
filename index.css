@@ -10,6 +10,16 @@ body {
     overflow:hidden;
     font-family: 'Josefin Sans', sans-serif;
 }
+li {
+    padding:0px;
+    margin:0px;
+    background:linear-gradient(0deg,#292826,#292826),center center;
+    background-size:cover;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    font-family: 'Josefin Sans', sans-serif;
+}
 #loading {
     width: 100vw;
     height: 100vh;
